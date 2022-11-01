@@ -3,3 +3,8 @@
 <p>メールアドレス：<%= current_user.email %></p>
 <p><%= link_to 'ログアウト', logout_path, method: :delete %></p>
 <p><%= link_to '登録解除', unsubscribe_path, method: :delete, data: { confirm: '本当に登録解除しますか？' } %></p>
+
+
+<%# if current_user != @user %>
+  <%= link_to 'chatを始める', chat_path(current_user)%>
+<%# end %>

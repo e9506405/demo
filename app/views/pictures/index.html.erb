@@ -16,7 +16,7 @@
       <tr>
         <td><%= picture.name %></td>
         #
-        <td><%= image_tag(url_for(image_of_pictures_path(picture)), size: '100x100') %></td>
+        <td><%= image_tag(url_for(image_of_pictures_path(picture)), size: '100x100', class: 'rounded-circle') %></td>
         <td><%= link_to 'Show', picture %></td>
         <td><%= link_to 'Edit', edit_picture_path(picture) %></td>
         <td><%= link_to 'Destroy', picture, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -25,6 +25,24 @@
   </tbody>
 </table>
 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 <br>
 
 <%= link_to 'New Picture', new_picture_path %>
